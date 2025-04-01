@@ -98,12 +98,22 @@
             line-height: 1;
             vertical-align: middle;
             padding: 1.5mm;
+            white-space: nowrap;
+        }
+        /* 指定实际考试名称单元格的宽度 */
+        tr th:first-child,
+        .exam-row td:first-child {
+            width: 12%;
+            min-width: 12%;
+            max-width: 12%;
+            white-space: nowrap;
         }
         .feedback-row td {
             height: 14mm; /* 减小反馈行的高度 */
             text-align: left;
             vertical-align: top;
             padding-top: 3mm; /* 减小顶部内边距 */
+            padding-left: 3mm; /* 统一左侧内边距 */
         }
         .feedback-row td.feedback-label {
             height: 14mm;
@@ -189,11 +199,11 @@
                 <td></td>
             </tr>
             <tr class="feedback-row">
-                <td class="feedback-label">不足</td>
+                <td class="feedback-label" style="text-align: center; vertical-align: middle; padding: 0;">不足</td>
                 <td colspan="9"></td>
             </tr>
             <tr class="feedback-row">
-                <td class="feedback-label">弥补</td>
+                <td class="feedback-label" style="text-align: center; vertical-align: middle; padding: 0;">弥补</td>
                 <td colspan="9"></td>
             </tr>
             
@@ -225,16 +235,16 @@
                 <td></td>
             </tr>
             <tr class="feedback-row">
-                <td class="feedback-label">不足</td>
+                <td class="feedback-label" style="text-align: center; vertical-align: middle; padding: 0;">不足</td>
                 <td colspan="9"></td>
             </tr>
             <tr class="feedback-row">
-                <td class="feedback-label">弥补</td>
+                <td class="feedback-label" style="text-align: center; vertical-align: middle; padding: 0;">弥补</td>
                 <td colspan="9"></td>
             </tr>
             
             
-            <!-- 期末联考 -->
+            <!-- 期末 -->
             <!-- 表头行 -->
             <tr class="subject-header">
                 <th style="width: 12%;"></th>
@@ -249,7 +259,7 @@
                 <th style="width: 15.8%;">班内排名</th>
             </tr>
             <tr class="exam-row">
-                <td>期末联考</td>
+                <td>期末</td>
                 <td></td>
                 <td></td>
                 <td></td>
@@ -261,11 +271,11 @@
                 <td></td>
             </tr>
             <tr class="feedback-row">
-                <td class="feedback-label">不足</td>
+                <td class="feedback-label" style="text-align: center; vertical-align: middle; padding: 0;">不足</td>
                 <td colspan="9"></td>
             </tr>
             <tr class="feedback-row">
-                <td class="feedback-label">弥补</td>
+                <td class="feedback-label" style="text-align: center; vertical-align: middle; padding: 0;">弥补</td>
                 <td colspan="9"></td>
             </tr>
         </table>

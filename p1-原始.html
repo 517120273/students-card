@@ -135,6 +135,15 @@
             line-height: 1;
             vertical-align: middle;
             padding: 1.5mm;
+            white-space: nowrap;
+        }
+        /* 指定实际考试名称单元格的宽度 */
+        tr th:first-child,
+        .exam-row td:first-child {
+            width: 12%;
+            min-width: 12%;
+            max-width: 12%;
+            white-space: nowrap;
         }
         .feedback-row td {
             height: 14mm; /* 减小反馈行的高度 */
